@@ -1,0 +1,36 @@
+img{
+	position: relative;
+}
+#box{
+	margin-top:5vh;
+		position: absolute;
+		top: 15%;
+		
+	}
+
+a{
+	margin-left:25vw;
+}
+	
+.btn{
+	margin-bottom: 10px;
+opacity: 0;
+animation: fadeIn 2s;
+animation-delay: 1s;
+animation-fill-mode: forwards; }
+@keyframes fadeIn {
+	from{opacity: 0;
+	}
+	to{opacity: 1;
+	}
+}
+
+@media(max-width:415px){
+	a{transform: scale(0.7);
+		margin: auto;}
+	#box{
+		top:5px;
+	}
+		
+	}
+}
