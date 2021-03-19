@@ -31,7 +31,7 @@ if (isset($_POST['save'])) {
 
 //create the sql query
 //create sql query to fetch records
-$sql="SELECT * FROM users WHERE email='$emaillogin' && password='".md5($passlogin)."' ";
+$sql="SELECT * FROM users WHERE email='$emaillogin' && password='".md5($passlogin)."' &&  username='$username' ";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
 	# code...
